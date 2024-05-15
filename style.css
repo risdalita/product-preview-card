@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+p {
+  font-size: 14px;
+  font-family: 'Montserrat';
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+h1,
+.price {
+  font-family: 'Fraunces';
+}
+
+.logo {
+  height: 500px;
+  background-size: cover;
+  width: fit-content;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Cream);
+}
+
+main {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background-color: var(--White);
+  border-radius: 10px;
+}
+
+section {
+  max-width: 100%;
+  width: 50%;
+}
+
+.info {
+  padding: 0px 30px;
+}
+
+p.top {
+  letter-spacing: 6px;
+  margin-bottom: 25px;
+}
+
+.info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  line-height: 40px;
+}
+
+.info p {
+  width: 80%;
+  margin-bottom: 20px;
+  /* line-height: 20px; */
+}
+
+.price span.line {
+  text-decoration: line-through;
+  font-size: 0.8rem;
+  position: absolute;
+  margin-top: 17px;
+}
+
+.price span.unline {
+  color: var(--Dark-cyan);
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding-right: 10px;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: var(--Dark-cyan);
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  opacity: 0.8;
+  color: var(--White);
+  margin-top: 20px;
+}
+
+button img {
+  padding-right: 10px;
+}
+
+button:hover {
+  background-color: var(--Dark-cyan);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .logo {
+    background: url(images/image-product-mobile.jpg) no-repeat;
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .info h1 {
+    font-size: 1.8rem;
+  }
+
+  .info p {
+    width: 100%;
+  }
+
+  .price span.unline {
+    font-size: 2rem;
+  }
+
+  .price span.line {
+    font-size: 0.8rem;
+    position: absolute;
+    margin-top: 10px;
+  }
+}
